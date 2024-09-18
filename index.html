@@ -82,7 +82,7 @@
 
             </section>
 
-            <div class="hobbies-display-imagens">
+            <!-- <div class="hobbies-display-imagens">
                 <img alt="Foto comida" src='./assets/pizza.png' class="hobbies-imagem"
                     style="border: solid 5px #b536ff ;" />
 
@@ -94,6 +94,31 @@
                 <img alt="Foto comida" src="./assets/pizza.png" class="hobbies-imagem" class="hobbies-imagem"
                     style="border: solid 5px #ffb4c8 ;" />
 
+            </div> -->
+
+            <div class="carousel">
+                <!-- Radio buttons para controlar o carrossel -->
+                <input type="radio" name="carousel" id="img1" checked>
+                <input type="radio" name="carousel" id="img2">
+                <input type="radio" name="carousel" id="img3">
+
+                <!-- Imagens do carrossel -->
+                <div class="slides">
+                <img style="border-radius: 50%; border: 4px solid #000;" src="assets/pizza.png" id="slide1" alt="Slide 1">
+                <img style="border-radius: 50%; border: 4px solid #000;" src="assets/Comunica.png" id="slide2" alt="Slide 2">
+                <img style="border-radius: 50%; border: 4px solid #000;" src="assets/Qualita.png" id="slide3" alt="Slide 3">
+                </div>
+
+                <!-- Botões laterais -->
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+
+                <!-- Navegação (bolinhas) -->
+                <div class="navigation">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                </div>
             </div>
 
             <!--Skills-->
@@ -226,6 +251,9 @@
             </section>
 
         </main>
+
+        <script src="carousel.js"></script>
+
     </body>
 
 </html>

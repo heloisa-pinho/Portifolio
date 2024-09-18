@@ -145,6 +145,72 @@ body {
   color: #177afc;
 }
 
+.carousel {
+  position: relative;
+  width: 500px; /* Largura do carrossel */
+  height: 500px; /* Altura do carrossel (igual à largura para imagens quadradas) */
+  margin: auto;
+  overflow: hidden;
+  background-color: #6e4b4b00; /* Adiciona um fundo para garantir visibilidade dos botões */
+}
+
+/* Imagens do carrossel */
+.carousel img {
+  width: 500px; /* Largura das imagens */
+  height: 500px; /* Altura das imagens (igual à largura para manter o formato quadrado) */
+  display: none;
+  object-fit: cover; /* Ajusta o tamanho da imagem para preencher o contêiner */
+}
+
+/* Radio buttons para controle do carrossel */
+.carousel input[type="radio"] {
+  display: none;
+}
+
+/* Exibir a imagem correspondente ao radio button selecionado */
+#img1:checked ~ .slides #slide1,
+#img2:checked ~ .slides #slide2,
+#img3:checked ~ .slides #slide3 {
+  display: block;
+}
+
+/* Botões laterais */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  user-select: none;
+  transition: background-color 0.3s;
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s; /* Transição suave para aparecer/desaparecer */
+}
+
+/* Mostrar botões quando o mouse está sobre o carrossel */
+.carousel:hover .prev,
+.carousel:hover .next {
+  opacity: 1;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
 /*Classes do hobbies*/
 
 .hobbies-wrapper {
