@@ -161,9 +161,9 @@ body {
   position: relative;
   width: 330px; /* Largura do carrossel */
   height: 380px; /* Altura do carrossel (igual à largura para imagens quadradas) */
-  margin: auto;
   overflow: hidden;
   background-color: #6e4b4b00; /* Adiciona um fundo para garantir visibilidade dos botões */
+  margin: auto;
 }
 
 /* Imagens do carrossel */
