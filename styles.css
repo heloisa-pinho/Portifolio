@@ -8,16 +8,22 @@
 }
 
 .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c1defa;
+  padding: 5px 10px;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #c1defa;
+}
 
+.nav-links{
   display: flex;
   justify-content: center;
+  flex-grow: 1;
   gap: 100px;
-  padding: 20px 0;
 }
 
 .header-links {
@@ -26,9 +32,9 @@
   font-family: "Poppins";
   font-size: 25px;
   font-weight: 600;
-  color: #177afc;
+  color: #093d81;
   transition: all .3s ease;
-
+  margin: 15px 0;
 }
 
 .header-links:hover {
@@ -37,6 +43,11 @@
   font-size: 28px;
   transform: scale(1.1);
   transition: all .3s ease;
+}
+
+.logo-img{
+  width: 75px;
+  height: 75px;
 }
 
 body {
@@ -119,7 +130,7 @@ body {
   font-family: "Poppins";
   font-size: 30px;
   font-weight: 600;
-  color: #177afc;
+  color: #093d81;
 }
 
 .sobre-mim-hr {
@@ -142,13 +153,13 @@ body {
 
 .sobre-mim-destaque {
   font-weight: 800;
-  color: #177afc;
+  color: #093d81;
 }
 
 .carousel {
   position: relative;
-  width: 500px; /* Largura do carrossel */
-  height: 500px; /* Altura do carrossel (igual à largura para imagens quadradas) */
+  width: 330px; /* Largura do carrossel */
+  height: 380px; /* Altura do carrossel (igual à largura para imagens quadradas) */
   margin: auto;
   overflow: hidden;
   background-color: #6e4b4b00; /* Adiciona um fundo para garantir visibilidade dos botões */
@@ -156,8 +167,8 @@ body {
 
 /* Imagens do carrossel */
 .carousel img {
-  width: 500px; /* Largura das imagens */
-  height: 500px; /* Altura das imagens (igual à largura para manter o formato quadrado) */
+  width: 320px; /* Largura das imagens */
+  height: 370px; /* Altura das imagens (igual à largura para manter o formato quadrado) */
   display: none;
   object-fit: cover; /* Ajusta o tamanho da imagem para preencher o contêiner */
 }
@@ -170,7 +181,9 @@ body {
 /* Exibir a imagem correspondente ao radio button selecionado */
 #img1:checked ~ .slides #slide1,
 #img2:checked ~ .slides #slide2,
-#img3:checked ~ .slides #slide3 {
+#img3:checked ~ .slides #slide3,
+#img4:checked ~ .slides #slide4,
+#img5:checked ~ .slides #slide5{
   display: block;
 }
 
@@ -422,7 +435,7 @@ body {
     margin-top: 20px;
   }
 
-  .header-wrapper {
+  .nav-links {
     position: relative;
     top: 0;
     left: 0;
@@ -432,8 +445,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 20px 0;
+    gap: 1px;
+    margin: 3px 0;
   }
 
   .header-links {
@@ -441,7 +454,7 @@ body {
     font-family: "Poppins";
     font-size: 17px;
     font-weight: 600;
-    color: #177afc;
+    color: #093d81;
   
   }
   

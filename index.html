@@ -5,16 +5,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-        <link rel="shortcut icon" type="imagex.png" href="./assets/icon.jpg" />
-        <title>Portifolio da Helo</title>
+        <link rel="shortcut icon" type="imagex.png" href="./assets/logo1.png" />
+        <title>Heloisa O. Pinho</title>
     </head>
 
     <body>
         <!--header com os link-->
+
         <header class="header-wrapper">
-            <a href="#sobre-mim" class="header-links">Sobre mim</a>
-            <a href="#Empresa-Junior" class="header-links">Empresa Júnior</a>
-            <a href="#Projetos" class="header-links">Projetos</a>
+            <img alt="logo" src="./assets/logo2.png" class="logo-img" />
+            <nav class="nav-links">
+                <a href="#sobre-mim" class="header-links">Sobre mim</a>
+                <a href="#Empresa-Junior" class="header-links">Empresa Júnior</a>
+                <a href="#Projetos" class="header-links">Projetos</a>
+            </nav>
         </header>
 
         <main>
@@ -70,10 +74,10 @@
                     </div>
 
                     <div style="margin-left: 15px;">
-                        <span class="texto">Nos meus momentos livres, gosto de fazer crochê, principalmente com minha
-                            mãe e minha avó. Também adoro cozinhar ouvindo música. Ler é outra paixão, e correr no
-                            parque com meu pai sempre me faz bem. Além disso, sempre que posso, amo ir ao cinema com meu
-                            irmão.
+                        <span class="texto">Nos meus momentos livres, gosto de fazer crochê enquanto vejo séries ou
+                            escuto música. Também adoro cozinhar para a família e amigos. Além disso, curto fazer
+                            atividades que envolvam exercício físico de alguma maneira e ler, especialmente na companhia
+                            dos meus pets
                         </span>
                     </div>
 
@@ -82,31 +86,26 @@
 
             </section>
 
-            <!-- <div class="hobbies-display-imagens">
-                <img alt="Foto comida" src='./assets/pizza.png' class="hobbies-imagem"
-                    style="border: solid 5px #b536ff ;" />
-
-
-                <img alt="Foto comida" src="./assets/pizza.png" class="hobbies-imagem"
-                    style="border: solid 5px #5ec44d ;" />
-
-
-                <img alt="Foto comida" src="./assets/pizza.png" class="hobbies-imagem" class="hobbies-imagem"
-                    style="border: solid 5px #ffb4c8 ;" />
-
-            </div> -->
-
             <div class="carousel">
                 <!-- Radio buttons para controlar o carrossel -->
                 <input type="radio" name="carousel" id="img1" checked>
                 <input type="radio" name="carousel" id="img2">
                 <input type="radio" name="carousel" id="img3">
+                <input type="radio" name="carousel" id="img4">
+                <input type="radio" name="carousel" id="img5">
 
                 <!-- Imagens do carrossel -->
                 <div class="slides">
-                <img style="border-radius: 50%; border: 4px solid #000;" src="assets/pizza.png" id="slide1" alt="Slide 1">
-                <img style="border-radius: 50%; border: 4px solid #000;" src="assets/Comunica.png" id="slide2" alt="Slide 2">
-                <img style="border-radius: 50%; border: 4px solid #000;" src="assets/Qualita.png" id="slide3" alt="Slide 3">
+                    <img style="border-radius: 60%; border: solid 2px #000000;" src="assets/croche.png" id="slide1"
+                        alt="Slide 1">
+                    <img style="border-radius: 60%; border: solid 2px #000000;" src="assets/caminhada.png" id="slide2"
+                        alt="Slide 2">
+                    <img style="border-radius: 60%; border: solid 2px #000000;" src="assets/pizza.png" id="slide3"
+                        alt="Slide 3">
+                    <img style="border-radius: 60%; border: solid 2px #000000;" src="assets/pets.png" id="slide4"
+                        alt="Slide 4">
+                    <img style="border-radius: 60%; border: solid 2px #000000;" src="assets/livro.png" id="slide5"
+                        alt="Slide 5">
                 </div>
 
                 <!-- Botões laterais -->
@@ -115,9 +114,11 @@
 
                 <!-- Navegação (bolinhas) -->
                 <div class="navigation">
-                <label for="img1"></label>
-                <label for="img2"></label>
-                <label for="img3"></label>
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                    <label for="img4"></label>
+                    <label for="img5"></label>
                 </div>
             </div>
 
@@ -163,14 +164,14 @@
                                 <p> React Native</p>
                         </card>
                         <card class="experiencias-cards">
-                            <img alt="Logo da Ecomp" src="./assets/Docker.png" class="experiencias-cards-image" />
+                            <img alt="Logo da Ecomp" src="./assets/vue.png" class="experiencias-cards-image" />
                             <span class="experiencias-cards-texto">
-                                <p>Docker</p>
+                                <p>Vue.js</p>
                         </card>
                         <card class="experiencias-cards">
-                            <img alt="Logo da Ecomp" src="./assets/C.png" class="experiencias-cards-image" />
+                            <img alt="Logo da Ecomp" src="./assets/css.png" class="experiencias-cards-image" />
                             <span class="experiencias-cards-texto">
-                                <p> C </p>
+                                <p> CSS </p>
                         </card>
                     </div>
                 </div>
@@ -195,7 +196,7 @@
 
                     <div class="ecomp-display-cards">
 
-                        <card class="ecomp-cards" style="background-color: #d997ff;">
+                        <card class="ecomp-cards">
                             <img alt="Logo da Ecomp" src="./assets/Comunica.png" class="ecomp-cards-image" />
                             <span class="experiencias-cards-texto"><strong>Diretoria de Comunicação
                                 </strong><br /><br />
@@ -206,18 +207,21 @@
 
                         </card>
 
-                        <card class="ecomp-cards" style="background-color: #a2ff92 ;">
+                        <card class="ecomp-cards">
                             <img alt="Operacao Apagao" src="./assets/Qualita.png" class="ecomp-cards-image" />
                             <span class="experiencias-cards-texto"><strong>Diretoria de Qualidade </strong><br /><br />
                                 Responsável por uma área mais técnica,incluindo a execução dos deploys dos nossos
                                 projetos, a revisão de códigos e a
                                 boas práticas de desenvolvimento. Também cuidamos do
-                                nosso servidor. Recentemente, participei de uma pesquisa sobre Docker, o que ampliou meu
+                                nosso servidor. Recentemente, participei de uma pesquisa sobre <a
+                                    href="https://hackmd.io/@x25ZGksbQ5OJDCcCPYtDBQ/BJoxN-uu0"
+                                    style="font-weight: bold; color: #093d81;">Docker</a> , o que
+                                ampliou meu
                                 conhecimento na área.
 
                         </card>
 
-                        <card class="ecomp-cards" style="background-color: #ffcbd9;">
+                        <card class="ecomp-cards">
                             <img alt="Logo da Ecomp" src="./assets/Comite.png" class="ecomp-cards-image" />
                             <span class="experiencias-cards-texto"><strong>Comitê de Diversidade</strong><br /><br />
                                 Responsável por promover um ambiente mais diverso e inclusivo na Ecomp. Um dos meus
