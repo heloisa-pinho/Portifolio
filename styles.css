@@ -263,7 +263,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 90%;
 }
 
 .experiencias-titulo {
@@ -306,8 +305,6 @@ body {
 .experiencias-cards-texto {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 5px;
-
   font-size: 15px;
   font-weight: 500;
   color: #000000;
@@ -380,6 +377,16 @@ body {
   justify-content: center;
 }
 
+.projetos-wrapper{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
 .projetos-div {
   display: flex;
   flex-direction: column;
@@ -421,7 +428,7 @@ body {
 
   .ecomp-cards {
     width: 300px;
-    height: 400px;
+    height: 420px;
     border: solid 1px #000000;
     border-radius: 20px;
     flex-direction: column;
@@ -458,6 +465,16 @@ body {
     font-weight: 600;
     color: #093d81;
   
+  }
+
+  .experiencias-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
   }
   
 
